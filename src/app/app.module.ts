@@ -9,6 +9,8 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 import { DeleteEmployeeComponent } from './delete-employee/delete-employee.component';
 import { ViewEmployeeComponent } from './view-employee/view-employee.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,12 @@ import { ViewEmployeeComponent } from './view-employee/view-employee.component';
     AddEmployeeComponent,
     EditEmployeeComponent,
     DeleteEmployeeComponent,
-    ViewEmployeeComponent
+    ViewEmployeeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
