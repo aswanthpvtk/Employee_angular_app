@@ -10,12 +10,12 @@
 
                         <h3 class="text-center">SEARCH EMPLOYEE</h3>
                         <label for="" class="form-label">Employee ID:</label>
-                        <input type="text" class="form-control">
+                        <input name="id" [(ngModel)]="id" type="text" class="form-control">
 
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
             
-                        <button class="btn btn-success" center>Search</button>
+                        <button (click)="readValues()" class="btn btn-success" center>Search</button>
 
                     </div>
                 </div>

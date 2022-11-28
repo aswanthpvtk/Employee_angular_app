@@ -1,135 +1,32 @@
 <app-navbar></app-navbar>
+
 <div class="container">
     <div class="row ">
         <table class="table  g-3 mt-20">
             <thead>
               <tr>
-                <th scope="col">ID</th>
+                
                 <th scope="col">Name</th>
                 <th scope="col">Designation</th>
                 <th scope="col">Salary</th>
-                <th scope="col">Company Website</th>
-                <th scope="col">Year of Experience</th>
                 <th scope="col">Phone</th>
-                <th scope="col">Email</th>
+               
                 
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1001</td>
-                <td>Arun TK</td>
-                <td>Software Engineer</td>
-                <td>30000</td>
-                <td>TCS</td>
-                <td>7</td>
-                <td>9876543210</td>
-                <td>arun123@gmail.com</td>
+              <tr *ngFor="let i of data">
+               
+                <td>{{i.name}}</td>
+                <td>{{i.desig}}</td>
+                <td>{{i.salary}}</td>
+
+                <td>{{i.phone}}</td>
+              
                 
               </tr>
 
-              <tr>
-                <td>1002</td>
-                <td>Arathi P</td>
-                <td>Software Engineer</td>
-                <td>35000</td>
-                <td>Aspire systems</td>
-                <td>1</td>
-                <td>9876556710</td>
-                <td>arathi@gmail.com</td>
-                
-              </tr>
-              <tr>
-                <td>1003</td>
-                <td>Arundhathi P</td>
-                <td>Software Engineer</td>
-                <td>35000</td>
-                <td>Rakutan</td>
-                <td>1</td>
-                <td>7876556710</td>
-                <td>aru@gmail.com</td>
-                
-              </tr>
-
-              <tr>
-                <td>1004</td>
-                <td>Vipin Raj P</td>
-                <td>Software Engineer</td>
-                <td>90000</td>
-                <td>Coditas</td>
-                <td>2</td>
-                <td>79965567106</td>
-                <td>vipin@gmail.com</td>
-                
-              </tr>
-
-              <tr>
-                <td>1005</td>
-                <td>Samuel</td>
-                <td>Tester</td>
-                <td>95000</td>
-                <td>ZOHO</td>
-                <td>2</td>
-                <td>9835567108</td>
-                <td>samuel@gmail.com</td>
-                
-              </tr>
-
-              <tr>
-                <td>1006</td>
-                <td>Anusree</td>
-                <td>Tester</td>
-                <td>85000</td>
-                <td>Capgemini</td>
-                <td>5</td>
-                <td>9935567104</td>
-                <td>anu@gmail.com</td>
-                
-              </tr>
-              <tr>
-                <td>1007</td>
-                <td>Aswana</td>
-                <td>Tester</td>
-                <td>85000</td>
-                <td>PIT</td>
-                <td>4</td>
-                <td>9555567102</td>
-                <td>aswana@gmail.com</td>
-                
-              </tr>
-              <tr>
-                <td>1008</td>
-                <td>Lithin</td>
-                <td>Softtware engineer</td>
-                <td>55000</td>
-                <td>Aspire</td>
-                <td>5</td>
-                <td>9335567104</td>
-                <td>lithin@gmail.com</td>
-                
-              </tr>
-              <tr>
-                <td>1009</td>
-                <td>Sarun</td>
-                <td>Softtware engineer</td>
-                <td>55000</td>
-                <td>Wipro</td>
-                <td>6</td>
-                <td>9335567104</td>
-                <td>Sarun@gmail.com</td>
-                
-              </tr>
-              <tr>
-                <td>1010</td>
-                <td>Amala</td>
-                <td>Softtware engineer</td>
-                <td>85000</td>
-                <td>Aspire</td>
-                <td>9</td>
-                <td>7335567101</td>
-                <td>amal@gmail.com</td>
-                
-              </tr>
+              
              
             </tbody>
           </table>
